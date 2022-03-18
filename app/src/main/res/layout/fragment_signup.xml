@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFCB2B"
+    tools:context=".SignupFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginBottom="10dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/user"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginBottom="10dp"
+
+        android:id="@+id/phone"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/white"
+            android:inputType="phone"
+            android:drawableRight="@drawable/phone"
+            android:maxLength="10"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginBottom="10dp"
+
+        app:boxStrokeWidthFocused="0dp"
+        android:id="@+id/password"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/lock"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginBottom="10dp"
+
+        app:boxStrokeWidthFocused="0dp"
+        android:id="@+id/password2"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/lock"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginBottom="10dp"
+
+        app:boxStrokeWidthFocused="0dp"
+        android:id="@+id/country"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/white"
+            android:inputType="textPersonName"
+            android:drawableRight="@drawable/flag"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:background="@drawable/button_bg"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>
