@@ -42,7 +42,7 @@ public class HomePage extends AppCompatActivity {
         phone = getUser();
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users");
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 

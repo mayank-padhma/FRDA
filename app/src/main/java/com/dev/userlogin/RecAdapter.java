@@ -1,11 +1,14 @@
 package com.dev.userlogin;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -35,7 +38,10 @@ public class RecAdapter extends RecyclerView.Adapter<RecAdapter.ViewHolder> {
         holder.name.setText(users.get(position).getUsername());
         holder.number.setText(users.get(position).getPhoneNo());
         String cc = users.get(position).getCC();
-        Glide.with(context).load(cc).into(holder.image);
+        Glide.with(context)
+                .load(cc)
+                .placeholder(R.drawable.flag)
+                .into(holder.image);
     }
 
     @Override

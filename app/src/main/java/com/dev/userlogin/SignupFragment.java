@@ -73,7 +73,7 @@ public class SignupFragment extends Fragment {
                     return;
                 }else {
                     setVis();
-                    UserHelperClass userHelperClass = new UserHelperClass(name, phoneNum, passWord, countryName, "http://www.geognos.com/api/en/countries/flag/"+code.toUpperCase()+".png");
+                    UserHelperClass userHelperClass = new UserHelperClass(name, phoneNum, passWord, countryName, "https://flagcdn.com/108x81/"+code+".png");
                     reference.child(phoneNum).setValue(userHelperClass);
                     reference.child(phoneNum).child("isLogged").setValue("true");
                     Intent intent = new Intent(getActivity(), HomePage.class);
